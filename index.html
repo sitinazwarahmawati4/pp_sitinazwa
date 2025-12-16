@@ -1,73 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-<link rel="stylesheet" href="style.css"> 
-    <style>
-        body { background-color: #0d8676; } 
-        a { color: purple; }
+    <meta name="description" content="Portofolio pribadi Siti Nazwa, menampilkan riwayat pendidikan, keahlian coding, dan proyek kreatif.">
+    
+    <meta property="og:title" content="Portofolio: Siti Nazwa">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630/3498db/ffffff?text=Portofolio+Siti+Nazwa">
+    <meta property="og:type" content="website">
 
-    </style>
+    <title>Portofolio Pribadi | Siti Nazwa Rahmawati</title>
 
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Selamat Datang di Praktikum CSS</h1>
-    <p style="color: rgb(187, 255, 0);">Ini adalah paragraf untuk percobaan Inline CSS.</p>
-    <a href="#" style="color: black;">Ini adalah link Uji Konflik.</a>
 
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="id">
+    <header>
+        <div style="text-align: center; margin-bottom: 10px;">
+            <h1>Siti Nazwa Rahmawati</h1>
+        </div>
+        <nav aria-label="Navigasi Utama">
+            <ul>
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#pendidikan">Pendidikan</a></li>
+                <li><a href="#Pengalaman">Pengalaman</a></li>
+                <li><a href="#karya">Karya</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<head>
-    <meta charset="UTF-8">
-    <title>Sesi 2: Selector dan Teks</title>
-    <link rel="stylesheet" href="style.css"> 
-</head>
-<body>
-    <h1 id="main-title">Judul Utama Proyek Saya</h1>
-    <p>Ini adalah paragraf pertama yang akan diatur melalui Element Selector.</p>
-    <p class="highlight">Paragraf ini penting! Kita akan menargetkannya dengan Class Selector.</p>
-    <p>Paragraf ketiga, normal.</p>
-    <a href="#">Link Navigasi</a>
-    <a href="#" class="highlight">Link Penting</a>
-    <div class="product-card">
-    <h2>Laptop Gaming Terbaru</h2>
-    <p>Performa luar biasa untuk gaming dan multitasking.</p>
-    <p class="price" id="diskon">Rp 15.000.000</p>
-</div>
-<div class="product-card">
-    <h2>Mouse Ergonomis</h2>
-    <p>Nyaman digunakan untuk sesi kerja panjang.</p>
-    <p class="price">Rp 500.000</p>
-</div>
-<div class="box">Kotak A</div><div class="box">Kotak B</div>
-<div class="box">Kotak A</div><div class="box">Kotak B</div>
-<span>Item Inline 1</span><span>Item Inline 2</span><div>Block 1</div><div>Block 2</div>
-<div class="inline-box">A</div><div class="inline-box">B</div>
-<ul class="nav-menu">
-    <li><a href="#">Beranda</a></li>
-    <li><a href="#">Produk</a></li>
-    <li><a href="#">Kontak</a></li>
-</ul>
+    <main>
 
-<div class="interaktif-box">Arahkan Kursor Ke Sini (Hover)</div>
-<div class="link-container">
-    <a href="https://example.com/new" class="nav-link">Link Baru (Unvisited)</a>
-    <a href="#" class="nav-link">Link Lama (Visited)</a>
-</div>
-<div class="interaktif-box">...</div>
-<div class="interaktif-box">...</div>
+        <section id="tentang">
+            <h2>Siti Nazwa Rahmawati</h2>
+            <img src="img/siti.jpg" 
+                 alt="Foto close-up Siti Nazwa tersenyum dengan latar belakang merah" 
+                 class="profile-img">
+            
+            <p>
+               Saya adalah seorang Mahasiswa Universitas Mayasari Bakti Kota Tasikmalaya semester 1 Program Studi Teknik Informatika.
+               Saya juga bekerja sebagai tenaga pendidik di SPS TAAM Miqdarul Falah.
+            </p>
+        </section>
 
+        <aside tabindex="0" aria-label="Kutipan Inspiratif">
+            <h3>💡 Quote of the Day</h3>
+            <blockquote>
+                "Satu-satunya cara untuk melakukan pekerjaan hebat adalah dengan mencintai apa yang Anda lakukan."
+            </blockquote>
+        </aside>
 
+        <section id="pendidikan">
+            <h2>Riwayat Pendidikan</h2>
+            <table>
+                <caption>Ringkasan Pendidikan Formal</caption>
+                <thead>
+                    <tr>
+                        <th>Tingkat</th>
+                        <th>Nama Institusi</th>
+                        <th>Tahun</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>SD</td>
+                        <td>SDN 2 Setiamulya</td>
+                        <td>2013 - 2019</td>
+                    </tr>
+                    <tr>
+                        <td>SMP</td>
+                        <td>SMP Islam Nurussalam</td>
+                        <td>2019-2022</td>
+                    </tr>
+                    <tr>
+                        <td>MA</td>
+                        <td>MA Assa'adah</td>
+                        <td>2022-2025</td>
+                    </tr>
+                    <tr>
+                        <td>Universitas</td>
+                        <td>Universitas Mayasari Bakti</td>
+                        <td>2025-Sekarang</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="2">Status Saat Ini</th>
+                        <td>Mahasiswa Aktif</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
 
-<button class="cta-button">Pesan Sekarang</button>
+        <section id="Pengalaman">
+            <h2>Pengalaman</h2>
+            
+            <h3>Technical Skills</h3>
+            <ul>
+                <li>HTML5 & CSS3</li>
+                <li>Python (Data Science Basic)</li>
+                <li>Statistika Dasar</li>
+            </ul>
 
-
-</body>
-
-
-</html>
+            <h3>Kamus Keahlian (Soft Skills)</h3>
+            <dl>
+                <dt><strong>Design Thinking</strong></dt>
+                <dd>Kemampuan memahami pengguna, menantang asumsi, dan mendefinisikan ulang masalah.</dd>
+                
+                <dt><strong>Logika Matematika</strong></dt>
+                <dd>Kemampuan analisis proposisi dan penyelesaian masalah terstruktur.</dd>

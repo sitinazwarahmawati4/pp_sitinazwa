@@ -1,41 +1,120 @@
-h1 { color: rgb(146, 4, 4); }
-a { color: green; }
-p { font-size: 18px; line-height: 1.6; } 
-.highlight { background-color: rgb(180, 180, 19); color: #333; }
-#main-title { border-bottom: 2px solid #000; } 
-body { font-family: Arial, sans-serif; } 
- h1 { text-align: center; } 
- p:not(.highlight) { font-weight: bold; font-style: italic; } 
-a { text-decoration: none; } 
- .product-card h2 { color: #378ae4; }  
- .price { color: rgb(136, 5, 5); font-weight: bold; } 
-#diskon { text-decoration: underline; } 
-/* Praktik standar yang wajib diterapkan */
-* {
-    box-sizing: border-box; 
-    margin: 0; /* Reset margin default browser */
-    padding: 0; /* Reset padding default browser */
-}
-.box { width: 200px; height: 100px; background-color: lightblue; border: 5px solid darkblue; } 
-.box { padding: 20px; }
-.box { margin-bottom: 30px; }
+:root {
+            --primary: #2563eb;
+            --secondary: #1e40af;
+            --bg: #f8fafc;
+            --text: #334155;
+            --card: #ffffff;
+        }
 
-.inline-box { display: inline-block; width: 150px; padding: 10px; margin: 10px; } 
- .nav-menu li { display: inline-block; } 
- .nav-menu li a { display: block; padding: 10px 15px; margin-right: 5px; } 
-.nav-menu li a { text-decoration: none; color: white; background-color: #333; } 
+        body {
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--bg);
+            margin: 0;
+            padding: 0;
+        }
 
- .nav-link { text-decoration: none; padding: 10px; margin-right: 15px; display: inline-block; } 
-  .nav-link:link { color: #007bff; } 
-  .nav-link:visited { color: #6c757d; } 
-.nav-link:hover { background-color: yellow; color: black; } 
- .nav-link:active { color: #dc3545; } 
+        /* Layout Semantic */
+        header {
+            background: var(--primary);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
 
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 0;
+            margin: 0;
+        }
 
- .interaktif-box { padding: 20px; border: 2px solid #ccc; background-color: #f8f8f8; cursor: pointer; transition: 0.3s; /* Efek transisi halus */ } 
-.interaktif-box:hover { border-color: green; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); } 
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
 
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            display: grid;
+            gap: 2rem;
+        }
 
-.cta-button { background-color: #007bff; color: white; padding: 12px 25px; border: none; border-radius: 5px; cursor: pointer; } 
-.cta-button:hover { background-color: #0056b3; } 
-.cta-button:active { background-color: #003c80; transform: translateY(2px); }
+        section, aside {
+            background: var(--card);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        h1, h2, h3 { color: var(--secondary); }
+        
+        /* Image Styling */
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--primary);
+            display: block;
+            margin: 0 auto 1rem;
+        }
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        th, td {
+            padding: 12px;
+            border-bottom: 1px solid #e2e8f0;
+            text-align: left;
+        }
+        th { background-color: #eff6ff; }
+        caption { font-style: italic; margin-bottom: 0.5rem; text-align: right;}
+
+        /* Form Styling */
+        form { display: grid; gap: 1rem; max-width: 600px; margin: auto; }
+        input, textarea, select {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+        }
+        button {
+            background: var(--primary);
+            color: white;
+            padding: 0.8rem;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        button:hover { background: var(--secondary); }
+        
+        /* Accessibility Focus */
+        *:focus {
+            outline: 3px solid orange;
+            outline-offset: 2px;
+        }
+
+        /* Responsive Video */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            height: 0;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
