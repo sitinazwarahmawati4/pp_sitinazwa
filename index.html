@@ -3,113 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portofolio pribadi Siti Nazwa, menampilkan riwayat pendidikan, keahlian coding, dan proyek kreatif.">
-    
-    <meta property="og:title" content="Portofolio: Siti Nazwa">
-    <meta property="og:image" content="https://via.placeholder.com/1200x630/3498db/ffffff?text=Portofolio+Siti+Nazwa">
-    <meta property="og:type" content="website">
-
-    <title>Portofolio Pribadi | Siti Nazwa Rahmawati</title>
-
+    <title>Café Digital Nusantara | Where Coffee Meets Digital</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav>
+        <div class="logo">Café Digital</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#facilities">Facilities</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="reservation.html" class="nav-btn">Reservasi</a></li>
+        </ul>
+    </nav>
 
-    <header>
-        <div style="text-align: center; margin-bottom: 10px;">
-            <h1>Siti Nazwa Rahmawati</h1>
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>Where Coffee Meets Digital</h1>
+            <p>Ruang nyaman untuk ngopi, kerja, dan koneksi di era digital.</p>
+            <div class="hero-btns">
+                <a href="#menu" class="btn-primary">Lihat Menu</a>
+                <a href="reservation.html" class="btn-secondary">Reservasi Sekarang</a>
+            </div>
         </div>
-        <nav aria-label="Navigasi Utama">
-            <ul>
-                <li><a href="#tentang">Tentang</a></li>
-                <li><a href="#pendidikan">Pendidikan</a></li>
-                <li><a href="#Pengalaman">Pengalaman</a></li>
-                <li><a href="#karya">Karya</a></li>
-                <li><a href="#kontak">Kontak</a></li>
-                <li><a href="lat_css.html">kumpulan tugas</a></li>
-            </ul>
-        </nav>
     </header>
+    <section class="stats">
+        <div class="stat-item"><h2>2</h2><p>Cabang</p></div>
+        <div class="stat-item"><h2>5,000+</h2><p>Pelanggan</p></div>
+        <div class="stat-item"><h2>4.8 ⭐</h2><p>Rating</p></div>
+    </section>
 
-    <main>
+    <section id="about" class="container">
+        <h2 class="section-title">Our Story</h2>
+        <div class="about-flex">
+            <div class="about-text">
+                <p>Café Digital Nusantara lahir dari kecintaan akan kopi dan teknologi. Didirikan pada 2023, kami menggabungkan kualitas kopi premium dengan fasilitas digital lengkap.</p>
+                <div class="vm-box">
+                    <h3>Visi</h3>
+                    <p>Menjadi jaringan café digital nomor 1 di Indonesia untuk milenial dan Gen Z.</p>
+                </div>
+                <div class="vm-box">
+                    <h3>Misi</h3>
+                    <ul>
+                        <li>Menyediakan tempat nyaman untuk nongkrong dan bekerja.</li>
+                        <li>Menjaga kualitas kopi premium lokal.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="about-img">
+                <img src="G2.jpg" alt="Interior Cafe">
+            </div>
+        </div>
+    </section>
 
-        <section id="tentang">
-            <h2>Siti Nazwa Rahmawati</h2>
-            <img src="images/siti.jpg" 
-                 alt="Foto close-up Siti Nazwa tersenyum dengan latar belakang merah" 
-                 class="profile-img">
-            
-            <p>
-               Saya adalah seorang Mahasiswa Universitas Mayasari Bakti Kota Tasikmalaya semester 1 Program Studi Teknik Informatika.
-               Saya juga bekerja sebagai tenaga pendidik di SPS TAAM Miqdarul Falah.
-            </p>
-        </section>
+    <section id="menu" class="container bg-light">
+        <h2 class="section-title">Our Menu</h2>
+        <h3>Signature Items</h3>
+        <div class="grid-3">
+            <div class="card"><img src="Digital Brew.jpg" alt="Brew"><h4>Digital Brew</h4><p>Rp 35,000</p></div>
+            <div class="card"><img src="tech Burger.jpg" alt="Burger"><h4>Tech Burger</h4><p>Rp 45,000</p></div>
+            <div class="card"><img src="Code Cake.jpg" alt="Cake"><h4>Code Cake</h4><p>Rp 28,000</p></div>
+        </div>
+        
+        <h3>Full Menu</h3>
+        <table class="menu-table">
+            <thead>
+                <tr><th>Kategori</th><th>Nama Item</th><th>Harga</th><th>Deskripsi</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Minuman</td><td>Espresso</td><td>Rp 25,000</td><td>Strong & Bold</td></tr>
+                <tr><td>Minuman</td><td>Cappuccino</td><td>Rp 30,000</td><td>Espresso & Foam</td></tr>
+            </tbody>
+        </table>
+    </section>
 
-        <aside tabindex="0" aria-label="Kutipan Inspiratif">
-            <h3>💡 Quote of the Day</h3>
-            <blockquote>
-                "Satu-satunya cara untuk melakukan pekerjaan hebat adalah dengan mencintai apa yang Anda lakukan."
-            </blockquote>
-        </aside>
-
-        <section id="pendidikan">
-            <h2>Riwayat Pendidikan</h2>
-            <table>
-                <caption>Ringkasan Pendidikan Formal</caption>
-                <thead>
-                    <tr>
-                        <th>Tingkat</th>
-                        <th>Nama Institusi</th>
-                        <th>Tahun</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>SD</td>
-                        <td>SDN 2 Setiamulya</td>
-                        <td>2013 - 2019</td>
-                    </tr>
-                    <tr>
-                        <td>SMP</td>
-                        <td>SMP Islam Nurussalam</td>
-                        <td>2019-2022</td>
-                    </tr>
-                    <tr>
-                        <td>MA</td>
-                        <td>MA Assa'adah</td>
-                        <td>2022-2025</td>
-                    </tr>
-                    <tr>
-                        <td>Universitas</td>
-                        <td>Universitas Mayasari Bakti</td>
-                        <td>2025-Sekarang</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <th colspan="2">Status Saat Ini</th>
-                        <td>Mahasiswa Aktif</td>
-                    </tr>
-                </tfoot>
-            </table>
-        </section>
-
-        <section id="Pengalaman">
-            <h2>Pengalaman</h2>
-            
-            <h3>Technical Skills</h3>
-            <ul>
-                <li>HTML5 & CSS3</li>
-                <li>Python (Data Science Basic)</li>
-                <li>Statistika Dasar</li>
+    <section id="facilities" class="container">
+        <h2 class="section-title">Our Facilities</h2>
+        <div class="about-flex">
+            <ul class="fac-list">
+                <li>📶 High-speed WiFi</li>
+                <li>📹 Meeting Room</li>
+                <li>🔌 Charging Station</li>
+                <li>🔌 printing & Scanning Service</li>
+                <li> 24/7 Coffe Service</li>
+                <li> Parking Area (Motor & Mobil)</li>
             </ul>
+            <div class="gallery grid-3">
+                <img src="G2.jpg" alt="1">
+                <img src="G6.jpg" alt="2">
+                <img src="G3.jpg" alt="3">
+                <img src="G4.jpg" alt="4">
+                <img src="G7.jpg" alt="5">
+                <img src="G3.jpg" alt="3">
+            </div>
+        </div>
+    </section>
 
-            <h3>Kamus Keahlian (Soft Skills)</h3>
-            <dl>
-                <dt><strong>Design Thinking</strong></dt>
-                <dd>Kemampuan memahami pengguna, menantang asumsi, dan mendefinisikan ulang masalah.</dd>
-                
-                <dt><strong>Logika Matematika</strong></dt>
-                <dd>Kemampuan analisis proposisi dan penyelesaian masalah terstruktur.</dd>
+    <footer id="contact">
+        <div class="footer-top">
+            <p>📧 info@cafedigital.com | 📞 021-1122-3344</p>
+        </div>
+        <div class="footer-main">
+            <h3>Café Digital Nusantara</h3>
+            <p>&copy; 2024. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Reservasi - Café Digital Nusantara</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav><div class="logo">Café Digital</div><a href="index.html">Kembali ke Home</a></nav>
+    
+    <section class="container">
+        <h2>Reservation Form</h2>
+        <form class="res-form">
+            <label>Nama Lengkap</label>
+            <input type="text" required>
+            
+            <label>Email</label>
+            <input type="email" required>
+            
+            <label>Nomor HP</label>
+            <input type="tel" required>
+            
+            <div class="grid-2">
+                <div><label>Tanggal</label><input type="date" required></div>
+                <div><label>Jam</label><input type="time" required></div>
+            </div>
+            
+            <label>Jumlah Orang (1-10)</label>
+            <input type="number" min="1" max="10" required>
+            
+            <label>Pilih Cabang</label>
+            <select>
+                <option>Jakarta - Sudirman</option>
+                <option>Bandung - Dago</option>
+            </select>
+            
+            <label>Permintaan Khusus</label>
+            <textarea></textarea>
+            
+            <label><input type="checkbox" required> Saya setuju dengan syarat & ketentuan</label>
+            
+            <button type="submit" class="btn-primary">Submit Reservasi</button>
+        </form>
 
-
+        <div class="faq">
+            <h3>FAQ</h3>
+            <p><b>Q: Jam operasional?</b><br>A: Kami buka setiap hari jam 07:00 - 22:00.</p>
+        </div>
+    </section>
+</body>
+</html>
